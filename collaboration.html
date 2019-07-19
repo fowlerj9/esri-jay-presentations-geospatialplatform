@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>reveal.js</title>
+
+		<meta name="description" content="">
+		<meta name="author" content="">
+
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<link rel="stylesheet" href="css/reset.css">
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/uc-2019.css" id="theme">
+
+
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="lib/css/monokai.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+
+		<!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+	</head>
+
+	<body>
+
+		<div class="reveal">
+
+			<!-- Any section element inside of this container is displayed as a slide -->
+			<div class="slides">
+
+				<section data-background="img/2019/uc/bg-1.png" data-background-size="cover">
+
+					<!-- Note: Reduce the font-size of the title below if you have a long title: -->
+					<h1 style="font-size: 80px;">Collaboration</h1>
+					<p>Cue groan now &#128521;</p>
+
+					<p style="font-size: 30px;">Dawn Matasic and Jay Fowler</p>
+					<!--<p style="font-size: 30px;">slides: <a href="http://bit.ly/abc123"><code>http://bit.ly/abc123</code></a></p>-->
+
+				</section>
+				<section data-markdown data-background="img/2019/uc/bg-2.png">
+					<textarea data-template>
+						## Introductions
+
+						- Who are we?
+						- What do we do and why?
+
+						<br>
+						<img height="200px" src="img/img/dawn.jpg">
+						<img height="200px" src="img/img/jay.jpg">
+
+
+					</textarea>
+				</section>
+
+				<section data-markdown data-background="img/2019/uc/bg-3.png">
+					<textarea data-template>
+						<iframe width="800" height="500" src="http://ourcityc.maps.arcgis.com/apps/opsdashboard/index.html#/36549b43b8c84e499345eba15ea314db"></iframe>
+					</textarea>
+				</section>
+
+				<section data-markdown data-background="img/2019/uc/bg-4.png">
+					<textarea data-template>
+						## Headline Here 4
+
+						* Bullet [points here](http://hakim.se).
+					</textarea>
+				</section>
+
+				<!-- ESRI LOGO SLIDE: -->
+				<section data-background="img/2019/uc/bg-2.png">
+					<img src="img/esri-science-logo-white.png" style="border: 0px; background:none; box-shadow: none;">
+				</section>
+
+
+
+			</div>
+
+		</div>
+
+		<script src="js/reveal.js"></script>
+
+		<script>
+
+			// More info https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				center: true,
+				hash: true,
+
+				transition: 'slide', // none/fade/slide/convex/concave/zoom
+
+				// More info https://github.com/hakimel/reveal.js#dependencies
+				dependencies: [
+					{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/highlight/highlight.js', async: true },
+					{ src: 'plugin/search/search.js', async: true },
+					{ src: 'plugin/zoom-js/zoom.js', async: true },
+					{ src: 'plugin/notes/notes.js', async: true }
+				]
+			});
+
+		</script>
+
+	</body>
+</html>
